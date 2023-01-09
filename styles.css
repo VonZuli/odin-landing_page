@@ -19,9 +19,6 @@ img {
   color: #e5e7eb;
 }
 
-.info-section {
-}
-
 .sign-up {
   background-color: #3882f6;
   color: #f9faf8;
@@ -41,6 +38,13 @@ img {
   align-items: center;
   gap: 20px;
   padding: 20px;
+}
+.link {
+  text-decoration: none;
+  color: #f9faf8;
+}
+.link:hover {
+  color: #f4c993;
 }
 .logo {
   font-size: 24px;
@@ -87,6 +91,8 @@ img {
   max-height: 320px;
   object-fit: cover;
   margin-left: 40px;
+  border: 5px #f4c993 solid;
+  border-radius: 10px;
 }
 
 .info-section {
@@ -120,7 +126,7 @@ img {
   max-height: 136px;
   max-width: 200px;
   object-fit: cover;
-  border: 2px solid #3882f6;
+  border: 3px solid #3882f6;
   border-radius: 5px;
 }
 
@@ -165,22 +171,79 @@ img {
 }
 .reviews-slideshow-container {
   display: flex;
+  max-width: 100%;
+  position: relative;
+  /* margin: auto; */
 }
 .reviews-quotes-slides {
   background-color: #e5e7eb;
-  color: #1f2937;
-  display: flex;
+  /* color: #1f2937; */
+  display: none;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .quote {
-  font-size: 36px;
+  font-size: 24px;
   font-style: italic;
   font-weight: lighter;
   /* max-width: 1000px; */
-  padding: 100px 100px 0 100px;
   /* display: flex; */
+  padding: 100px 100px 0 100px;
+  color: #1f2937;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 .signature {

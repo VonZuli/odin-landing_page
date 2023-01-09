@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
     <title>Odin Products</title>
   </head>
   <body>
@@ -12,9 +13,9 @@
       <div class="logo">
         <img src="/images/Paw_Print.png" />Best Paw Forward
       </div>
-      <div class="link">Services</div>
-      <div class="link">About Us</div>
-      <div class="link">Contact</div>
+      <div><a class="link" href="#">Services</a></div>
+      <div><a class="link" href="#">About Us</a></div>
+      <div><a class="link" href="#">Contact</a></div>
     </div>
     <div class="content">
       <div class="content-container">
@@ -78,7 +79,7 @@
       </div>
     </div>
     <div class="reviews-slideshow-container">
-      <div class="reviews-quotes-slides">
+      <div class="reviews-quotes-slides fade">
         <div class="quote">
           I am extremely satisfied with the care and attention my dog receives
           at Best Paw Forward. The staff are loving and knowledgeable, and the
@@ -86,7 +87,7 @@
         </div>
         <div class="signature">-Ethan Thompson</div>
       </div>
-      <!-- <div class="reviews-quotes-slides">
+      <div class="reviews-quotes-slides">
         <div class="quote">
           My dog has been going to Best Paw Forward for the past year and I have
           been thoroughly impressed with the level of care he receives. The
@@ -125,7 +126,16 @@
           Forward for top-notch care for your furry friend.
         </div>
         <div class="signature">-William Smith</div>
-      </div> -->
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
     <div class="call-to-action">
       <div class="action-container">
