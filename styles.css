@@ -15,12 +15,11 @@ img {
 .footer,
 .content {
   background-color: #1f2937;
-  border-bottom: red 2px solid;
+
   color: #e5e7eb;
 }
 
 .info-section {
-  border-bottom: red 2px solid;
 }
 
 .sign-up {
@@ -61,6 +60,7 @@ img {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  padding: 100px;
 }
 
 .content-container {
@@ -78,7 +78,7 @@ img {
 
 .hero-description {
   max-width: 400px;
-  padding: 10px 0;
+  padding: 10px;
   font-weight: lighter;
 }
 
@@ -86,19 +86,21 @@ img {
   align-self: flex-end;
   max-height: 320px;
   object-fit: cover;
+  margin-left: 40px;
 }
 
 .info-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding: 20px 0px 100px 0px;
 }
 
 .info-images {
   display: flex;
   gap: 20px;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .info-title {
@@ -161,13 +163,12 @@ img {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.reviews-container {
+.reviews-slideshow-container {
   display: flex;
 }
-.reviews-quotes {
+.reviews-quotes-slides {
   background-color: #e5e7eb;
   color: #1f2937;
-  border-bottom: red solid 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,7 +203,7 @@ img {
   border-radius: 5px;
   display: flex;
   /* flex-direction: column; */
-  padding: 20px;
+  padding: 20px 80px;
 }
 .action-container > h3 {
   flex-grow: 2;
@@ -210,7 +211,16 @@ img {
 .action-container > p {
   flex-grow: 1;
 }
+.call-to-action {
+  margin: 34px;
+}
 .call-to-action .sign-up {
   border: 2px solid #f9faf8;
   margin: 10px 50px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
